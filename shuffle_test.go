@@ -27,6 +27,6 @@ func TestShuffle(t *testing.T) {
 	observation_frequency := observationFrequency([]float64{0, 0, 0, 0, 0}, []interface{}{"a", "b", "c", "d", "e"})
 	expected_frequency := []float64{20, 20, 20, 20, 20}
     if !ChiSquare(5, len(expected_frequency)-1, observation_frequency, expected_frequency) {
-	    t.Error("not shuffledee")
+	    t.Error("not shuffled")
 	}
 }
